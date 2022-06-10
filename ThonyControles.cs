@@ -39,19 +39,6 @@ namespace miJuego2D {
                 Salto();
             }
 
-            //girar
-            //if (mvHor < 0) transform.localScale = new Vector3(-0.3f, 0.3f, 0.3f);
-            //if (mvHor > 0) transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
-
-            //camara sigue personaje
-            //Vector3 dondeQuieroIR = Camera.main.transform.position;
-            //Vector3 dondeEstoy = transform.position - new Vector3(0, 0, 2.0f);
-
-            ////Camera.main.transform.position = dondeEstoy + (dondeQuieroIR - dondeEstoy) * 0.05f;
-            //Camera.main.transform.position = Vector3.Lerp(dondeQuieroIR ,dondeEstoy ,0.05f);
-
-            //Mover punto de Mira
-
             if (tieneArma)
             {
                 MIRA.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
