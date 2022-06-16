@@ -86,23 +86,7 @@ namespace miJuego2D
                 Salto();
             }
         }
-        private void Update()
-        {
-            //Debug.DrawRay(Varg.position, Vector3.down, Color.red);
 
-            //if (Input.GetKeyDown(KeyCode.A))
-            //{
-            //    CamDetras();
-            //}
-            //if (Input.GetKeyDown(KeyCode.D))
-            //{
-            //    CamDelante();
-            //}
-            //if (Input.GetKeyDown(KeyCode.Space))
-            //{
-            //    Salto();
-            //}
-        }
         public void CamDelante()
         {
             Varg.transform.Translate(velCam, 0, 0);
